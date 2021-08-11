@@ -3,11 +3,10 @@ from datetime import datetime, timedelta
 from discord.ext import commands
 import streamlit as st
 
-print(st.secrets["TOKEN"])
 intents = discord.Intents(members=True)
 bot = commands.Bot(command_prefix='#', intents=intents)
 
-token = "YOUR_BOT_TOKEN" 
+token = st.secrets["TOKEN"] 
 
 
 @bot.event

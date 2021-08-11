@@ -1,8 +1,9 @@
 import discord
 from datetime import datetime, timedelta
 from discord.ext import commands
-from os import getenv
+import streamlit as st
 
+print(st.secrets["TOKEN"])
 intents = discord.Intents(members=True)
 bot = commands.Bot(command_prefix='#', intents=intents)
 
